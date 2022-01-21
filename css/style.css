@@ -5,11 +5,25 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+  main{
+      position: relative;
   }
 main > div{
     position: relative;
     height: 100vh;
     width: 100%;
+
+}
+.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+#yellow > .content{
+    top: 50%;
 }
 #green{
     background-color: green;
@@ -25,23 +39,28 @@ main > div{
     background-color: yellow;
    
 }
-img{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 button{
     position: fixed;
-    top: 20px;
+    top: 50px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    box-shadow: 1px 2px 5px black;
+}
+button:focus{
+    background-color: lightslategray;
 }
 .one{
-    right:60px;
+    right:120px;
 }
 .two{
-    right: 40px;
+    right: 70px;
 }
 .three{
     right: 20px;
+}
+h1{
+    font-size: 3em;
 }
