@@ -53,6 +53,9 @@ button{
 button:focus{
     background-color: lightslategray;
 }
+button:hover{
+    box-shadow: 3px 4px 5px black;
+}
 .one{
     right:120px;
 }
@@ -68,4 +71,9 @@ h1{
 }
 #yellow h1 {
     color: green;
+}
+
+.content img:hover{
+    filter: drop-shadow(5px 10px 5px black);
+    transform: rotate(-10deg);
 }
